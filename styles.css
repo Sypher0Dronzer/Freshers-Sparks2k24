@@ -5,6 +5,15 @@
 body{
     overflow-x: hidden;
 }
-video{
+#domain-vid{
     width: 100vw;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width:1280px){
+    #domain-vid{
+        width: 1280px;
+        object-fit: cover;
+    }
 }
