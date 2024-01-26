@@ -12,6 +12,9 @@
     align-items: center;
     visibility: visible;
   }
+  .preloader img{
+    max-width: 250px;
+  }
   .hide-preloader{
     z-index: -999;
     visibility: hidden;
