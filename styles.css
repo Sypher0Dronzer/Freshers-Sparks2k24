@@ -1,19 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
+
+@font-face {
+  font-family: japan2;
+  src: url("japanese-3017-font/Japanese3017-Eljn.ttf");
 }
-body{
-    overflow-x: hidden;
+@font-face {
+  font-family: star;
+  src: url("starkiller-font/StarkillerItalic-KzoW.ttf");
 }
-#domain-vid{
-    width: 100vw;
-    position:absolute;
-    left: 50%;
-    transform: translateX(-50%);
+@font-face {
+  font-family: midorima;
+  src: url("midorima-personal-use/Midorima-PersonalUse-Regular.ttf");
 }
-@media (max-width:1280px){
-    #domain-vid{
-        width: 1280px;
-        object-fit: cover;
-    }
+@font-face {
+  font-family: renji;
+  src: url("renji-free-trial/Renji\ Free\ Trial.ttf");
 }
+@font-face {
+  font-family: nuku;
+  src: url("nuku-nuku/nuku1.ttf");
+}
+@font-face {
+  font-family: harry;
+  src: url("harry-p-font/HarryP-MVZ6w.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
+.text {
+  color: white;
+  font-size: 70px;
+  background: linear-gradient(
+    to top right,
+    rgba(156, 204, 101, 1) 0%,
+    rgba(38, 198, 218, 1) 50%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#advantage {
+  font-family: advantage;
+}
+#karasha {
+  font-family: karasha;
+}
+#midorima {
+  font-family: midorima;
+}
+#nuku {
+  font-family: nuku;
+}
+#renji {
+  font-family: renji;
+}
+#japan2 {
+  font-family: japan2;
+}
+#star {
+  font-family: star;
+}
+#danger {
+  font-family: danger;
+}
+#harry {
+  font-family: harry;
+}
+#animal {
+  font-family: animal;
+}
+
