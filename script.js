@@ -9,7 +9,7 @@ let ctx = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 let images = [];
-for (let i = 1; i <= 43; i++) {
+for (let i = 1; i <= 20; i++) {
     let image = new Image();
     image.src = `domain/scene${i.toString().padStart(5, "0")}.png`;
     images.push(image);
@@ -25,7 +25,12 @@ let wratio = canvas.width / imgWidth;
 let ratio = Math.max(hratio, wratio);
 let centerY = Math.floor(canvas.height - imgHeight * ratio) / 2;
 let centerX = Math.floor(canvas.width - imgWidth * ratio) / 2;
+
+const preloader = document.querySelector(".preloader");
+
 window.addEventListener("load", () => {
+  preloader.classList.add("hide-preloader");
+
   ctx.drawImage(
     images[frame],
     0,
@@ -44,7 +49,7 @@ function animate() {
     framerate++;
     if(framerate % stagger==0){
         frame+=k;
-        if(frame==42 || frame==0){
+        if(frame==19 || frame==0){
             k *= -1
         }
         ctx.clearRect(0, 0, canvas.width, canvas.height);

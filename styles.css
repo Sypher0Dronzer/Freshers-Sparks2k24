@@ -1,27 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&display=swap');
 
 @font-face {
-  font-family: japan2;
-  src: url("japanese-3017-font/Japanese3017-Eljn.ttf");
-}
-@font-face {
-  font-family: star;
-  src: url("starkiller-font/StarkillerItalic-KzoW.ttf");
-}
-@font-face {
-  font-family: midorima;
-  src: url("midorima-personal-use/Midorima-PersonalUse-Regular.ttf");
-}
-@font-face {
-  font-family: renji;
-  src: url("renji-free-trial/Renji\ Free\ Trial.ttf");
-}
-@font-face {
-  font-family: nuku;
-  src: url("nuku-nuku/nuku1.ttf");
-}
-@font-face {
-  font-family: harry;
-  src: url("harry-p-font/HarryP-MVZ6w.ttf");
+  font-family: hirosh;
+  src: url("japan-version-font/JapanVersion-1GpZB.ttf");
 }
 
 * {
@@ -36,46 +17,18 @@ canvas {
   top: 0;
   z-index: -2;
 }
-.text {
-  color: white;
-  font-size: 70px;
-  background: linear-gradient(
-    to top right,
-    rgba(156, 204, 101, 1) 0%,
-    rgba(38, 198, 218, 1) 50%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-#advantage {
-  font-family: advantage;
-}
-#karasha {
-  font-family: karasha;
-}
-#midorima {
-  font-family: midorima;
-}
-#nuku {
-  font-family: nuku;
-}
-#renji {
-  font-family: renji;
-}
-#japan2 {
-  font-family: japan2;
-}
-#star {
-  font-family: star;
-}
-#danger {
-  font-family: danger;
-}
-#harry {
-  font-family: harry;
-}
-#animal {
-  font-family: animal;
+.Sparkz{
+  letter-spacing: 2px;
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  /* text-shadow: 0 0 10px #fff,
+               0 0 20px  #e321219d,
+               0 0 30px  #ec0101; */
+  
 }
 
+#hirosh {
+  font-family: orbitron;
+  font-weight: 900;
+}
