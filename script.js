@@ -49,7 +49,7 @@ function animate() {
     framerate++;
     if(framerate % stagger==0){
         frame+=k;
-        if(frame==25 || frame==0){
+        if(frame==24 || frame==0){
             k *= -1
         }
         ctx.clearRect(0, 0, canvas.width, canvas.height);
