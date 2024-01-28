@@ -9,7 +9,7 @@ let ctx = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 let images = [];
-for (let i = 1; i <= 16; i++) {
+for (let i = 5; i <= 16; i++) {
     let image = new Image();
     image.src = `domain/scene${i.toString().padStart(5, "0")}.png`;
     images.push(image);
@@ -49,7 +49,7 @@ function animate() {
     framerate++;
     if(framerate % stagger==0){
         frame+=k;
-        if(frame==15|| frame==0){
+        if(frame==11|| frame==0){
             k *= -1
         }
         ctx.clearRect(0, 0, canvas.width, canvas.height);
