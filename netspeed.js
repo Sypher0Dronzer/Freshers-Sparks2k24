@@ -20,7 +20,7 @@ function displaySpeed() {
   var bps = (loadedBits / timeDuration).toFixed(2);
   var speedInKbps = (bps / 1024).toFixed(2);
   var speedInMbps = (speedInKbps / 1024).toFixed(2);
-  alert(
+  console.log();(
     "Your internet connection speed is: \n" +
       speedInMbps +
       " Mbps\n"
