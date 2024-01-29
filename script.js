@@ -1,15 +1,16 @@
 /**@type {HTMLCanvasElement} */
-
+let imagelimit=10;
+let initialindex=5
 let k=1;
 let frame = 0;
-let stagger=12;
+let stagger=25;
 let framerate=1
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 let images = [];
-for (let i = 5; i <= 16; i++) {
+for (let i = 5; i <= imagelimit; i++) {
     let image = new Image();
     image.src = `domain/scene${i.toString().padStart(5, "0")}.png`;
     images.push(image);
@@ -27,7 +28,7 @@ let centerY = Math.floor(canvas.height - imgHeight * ratio) / 2;
 let centerX = Math.floor(canvas.width - imgWidth * ratio) / 2;
 
 const preloader = document.querySelector(".preloader");
-
+console.log('hello');
 window.addEventListener("load", () => {
   preloader.classList.add("hide-preloader");
 
@@ -49,7 +50,7 @@ function animate() {
     framerate++;
     if(framerate % stagger==0){
         frame+=k;
-        if(frame==11|| frame==0){
+        if(frame== imagelimit-1- initialindex || frame==0){
             k *= -1
         }
         ctx.clearRect(0, 0, canvas.width, canvas.height);
