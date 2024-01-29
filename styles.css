@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&display=swap');
+
 
 @font-face {
   font-family: hirosh;
@@ -8,27 +8,51 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 body {
   overflow-x: hidden;
-}
-canvas {
-  position: absolute;
-  top: 0;
-  z-index: -2;
-}
-.Sparkz{
-  letter-spacing: 2px;
-  font-size: 60px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  /* text-shadow: 0 0 10px #fff,
-               0 0 20px  #e321219d,
-               0 0 30px  #ec0101; */
-  
 }
 
 #hirosh {
   font-family: orbitron;
   font-weight: 900;
+}
+#domain{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.Sparkz{
+  letter-spacing: 2px;
+  font-size: 70px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  
+}
+/* ----section 1 */
+.section1{
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+align-items: center;  
+}
+.welcome-msg{
+  color: white;
+  font-size: 20px;
+  max-width: 600px;
+  font-family: poppins;
+}
+.welcome-msg span{
+  font-family:harry;
+  color: yellow;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-text-stroke: white;
 }

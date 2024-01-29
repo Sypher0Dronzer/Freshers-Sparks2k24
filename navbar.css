@@ -1,0 +1,52 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    color: white;
+    padding: 10px 5vw;
+    background: #00000073;
+  }
+  .vertical{
+      display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 5vw;
+    top: 40px;
+    align-items: end;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  .vertical a{
+    margin-top: 15px;
+  }
+
+  .nav-items a{
+    color: white;
+    font-family:nuku;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+  .menu i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .menu{
+    display: none;
+  }
+  .logo img{
+    height: 100px;
+
+  }
+  @media (max-width:700px){
+    .horizontal{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+  }
