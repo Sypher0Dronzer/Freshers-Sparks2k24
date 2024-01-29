@@ -23,7 +23,7 @@ function resize() {
   img.height = ratio * imgHeight;
   img.width = ratio * imgWidth;
 
-  img.style.transform=`translateX(${centerX}px)`
+  img.style.transform=`translateX(-${centerX}px)`
 }
 window.addEventListener("resize", ()=>{
     resize()

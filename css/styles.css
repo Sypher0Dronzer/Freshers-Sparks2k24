@@ -1,0 +1,94 @@
+
+
+@font-face {
+  font-family: hirosh;
+  src: url("japan-version-font/JapanVersion-1GpZB.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+body {
+  overflow-x: hidden;
+}
+
+#hirosh {
+  font-family: orbitron;
+  font-weight: 900;
+}
+#domain{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.Sparkz{
+  letter-spacing: 2px;
+  font-size: 70px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.708);
+  text-align: center;
+  animation: glowYellow 1s ease-in-out infinite alternate;
+
+
+  
+}
+/* ----------------section 1------------------ */
+
+.section1{
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;  
+}
+.welcome-msg{
+  margin-top: 40px;
+  color: white;
+  font-size: 20px;
+  max-width: 600px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: 'Kaushan Script';
+  animation: glowWhite 1s ease-in-out infinite alternate;
+  text-align: center;
+}
+
+
+
+.welcome-msg span{
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: glowYellow 1.2s ease-in-out infinite alternate;
+  
+}
+@media (max-width:980px){
+  .Sparkz{
+    font-size: 50px;
+  }
+  .welcome-msg{
+    font-size: 16px;
+  }
+}
+@media (max-width:480px){
+  .Sparkz{
+    font-size: 35px;
+  }
+  .welcome-msg{
+    font-size: 14px;
+    max-width: 90vw;
+  }
+  .welcome-msg span{
+    font-size: 18px;
+  }
+}
+
+/* --------------------section2------------- */
+.section2{
+  
+}
