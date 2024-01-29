@@ -1,7 +1,6 @@
 const vMenu = document.querySelector(".vertical");
 let hMenu = document.querySelector(".horizontal");
 let menuIcon = document.querySelector(".menu");
-vMenu.style.display='none'
 console.log(vMenu.style.display);
 menuIcon.addEventListener("click", () => {
   if (vMenu.style.display == 'none') {
