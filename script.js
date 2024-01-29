@@ -1,5 +1,5 @@
 /**@type {HTMLCanvasElement} */
-let imagelimit=15;
+let imagelimit=12;
 let initialindex=5
 let k=1;
 let frame = 0;
@@ -28,10 +28,7 @@ let centerY = Math.floor(canvas.height - imgHeight * ratio) / 2;
 let centerX = Math.floor(canvas.width - imgWidth * ratio) / 2;
 
 const preloader = document.querySelector(".preloader");
-console.log('hello');
 window.addEventListener("load", () => {
-  preloader.classList.add("hide-preloader");
-
   ctx.drawImage(
     images[frame],
     0,
@@ -43,6 +40,8 @@ window.addEventListener("load", () => {
     images[frame].width * ratio,
     images[frame].height * ratio
   );
+  // preloader.classList.add("hide-preloader");
+
       animate();
 });
 
