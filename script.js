@@ -29,6 +29,7 @@ let centerX = Math.floor(canvas.width - imgWidth * ratio) / 2;
 
 const preloader = document.querySelector(".preloader");
 window.addEventListener("load", () => {
+  preloader.classList.add("hide-preloader");
   ctx.drawImage(
     images[frame],
     0,
@@ -40,7 +41,6 @@ window.addEventListener("load", () => {
     images[frame].width * ratio,
     images[frame].height * ratio
   );
-  // preloader.classList.add("hide-preloader");
 
       animate();
 });
