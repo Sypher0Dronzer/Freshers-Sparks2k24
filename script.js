@@ -1,18 +1,18 @@
 /**@type {HTMLCanvasElement} */
-let imagelimit=10;
+let imagelimit=15;
 let initialindex=5
 let k=1;
 let frame = 0;
-let stagger=25;
+let stagger=15;
 let framerate=1
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 let images = [];
-for (let i = 5; i <= imagelimit; i++) {
+for (let i = initialindex; i <= imagelimit; i++) {
     let image = new Image();
-    image.src = `domain/scene${i.toString().padStart(5, "0")}.png`;
+    image.src = `BatchCompress.com/scene${i.toString().padStart(5, "0")}.jpg`;
     images.push(image);
 }
 
