@@ -12,6 +12,10 @@
   font-family: nuku;
   src: url("../nuku-nuku/nuku1.ttf");
 }
+@font-face {
+  font-family: fighting;
+  src: url(../fighting_spirit_tbs/Fighting\ Spirit\ 2\ ital.otf);
+}
 
 @keyframes glowYellow {
   from {
@@ -22,13 +26,4 @@
     text-shadow: 0 0 20px rgb(226, 240, 31);
   }
 }
-@keyframes glowWhite {
-    from {
-      text-shadow: 0 0 10px white;
-      text-shadow: 0 0 40px white;
-    }
-    to {
-      text-shadow: 0 0 30px white;
-      text-shadow: 0 0 50px white;
-    }
-  }
+
