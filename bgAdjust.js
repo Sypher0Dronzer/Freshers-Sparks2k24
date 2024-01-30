@@ -3,9 +3,12 @@ let domain = document.querySelector("#domain");
 let mask=document.querySelector('#mask')
 let section1=document.querySelector('.section1')
 let section2=document.querySelector('.section2')
+window.addEventListener("load", () => {
+  preloader.classList.add("hide-preloader");
 
-backgroundImgAdjust(domain,section1)
-backgroundImgAdjust(mask,section2)
+});
+// backgroundImgAdjust(domain,section1)
+// backgroundImgAdjust(mask,section2)
 
 function backgroundImgAdjust(img,section){
 
