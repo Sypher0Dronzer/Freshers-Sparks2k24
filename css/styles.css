@@ -24,7 +24,7 @@ body {
   align-items: center;
   width: 99vw;
   overflow-x: hidden;
-  background-image: url("../domain/scene00012.png");
+  background-image: url("../domain.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -37,6 +37,8 @@ body {
   color: rgba(255, 255, 255, 0.708);
   text-align: center;
   animation: glowYellow 1s ease-in-out infinite alternate;
+  background-image: url('../yellow\ lightning.jpg');
+  background-size: contain;
 }
 .welcome-msg {
   margin-top: 40px;
