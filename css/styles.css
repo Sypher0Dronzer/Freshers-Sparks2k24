@@ -2,7 +2,10 @@
   font-family: hirosh;
   src: url("japan-version-font/JapanVersion-1GpZB.ttf");
 }
-
+:root{
+  /* --btnColor:#2bd2ff; */
+  --btnColor:#F7F798;
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +25,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 99vw;
+  width: 100vw;
   overflow-x: hidden;
   background-image: url("../domain.jpg");
   background-position: center;
@@ -34,22 +37,24 @@ body {
   font-weight: 900;
   letter-spacing: 2px;
   font-size: 70px;
-  color: rgba(255, 255, 255, 0.708);
+  color: rgba(255, 255, 255, 0.76);
   text-align: center;
   animation: glowYellow 1s ease-in-out infinite alternate;
-  background-image: url('../yellow\ lightning.jpg');
+  background-image: url("../yellow\ lightning.jpg");
   background-size: contain;
 }
 .welcome-msg {
   margin-top: 40px;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 500;
   max-width: 600px;
-  letter-spacing: 1px;
   word-spacing: 2px;
-  font-family: "Kaushan Script";
+  font-family: "Young Serif", serif;
+  font-style: normal;
   animation: glowWhite 1s ease-in-out infinite alternate;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .welcome-msg span {
@@ -58,6 +63,129 @@ body {
   letter-spacing: 2px;
   animation: glowYellow 1.2s ease-in-out infinite alternate;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.container .btn {
+  height: 50px;
+  margin: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  width: 155px;
+  font-family: orbitron;
+}
+
+.container .btn a {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.container .btn:hover a {
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.container .btn a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left,
+                rgba(255,255,255,0.15),
+                transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.3s;
+}
+
+.container .btn:hover a::before {
+  transform: skewX(45deg) translateX(200%);
+}
+
+.container .btn::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  height: 10px;
+  width: 30px;
+  background: rgb(8, 107, 183);
+  border-radius: 10px;
+  transition: 0.3s;
+  transition-delay: 0s;
+}
+
+.container .btn:hover::before {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.2s;
+}
+
+.container .btn::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  height: 10px;
+  width: 30px;
+  background: rgb(7, 95, 189);
+  border-radius: 10px;
+  transition: 0.3s;
+  transition-delay: 0s;
+}
+
+.container .btn:hover::after {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.3s;
+}
+
+
+.container .btn:nth-child(1):before,
+.container .btn:nth-child(1)::after {
+  background: var(--btnColor);
+  box-shadow: 0 0 5px var(--btnColor),
+    0 0 15px var(--btnColor),
+    0 0 30px var(--btnColor),
+    0 0 60px var(--btnColor);
+}
+
+.container .btn:active a {
+  color: #000;
+}
+
 @media (max-width: 980px) {
   .Sparkz {
     font-size: 50px;
@@ -82,7 +210,7 @@ body {
 /* --------------------section2------------- */
 .section2 {
   min-height: 99vh;
-  width: 99vw;
+  width: 100vw;
   overflow-x: hidden;
   background-image: url(../mask.jpg);
   background-position: center;
@@ -93,3 +221,35 @@ body {
   justify-content: center;
   color: white;
 }
+.section2 h3{
+  font-family: transformer;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section2 h1{
+  font-family: transformer;
+  font-size: 45px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+@media (max-width:1080px) {
+  .section2 h3{
+    font-size: 22px;
+  }
+  .section2 h1{
+    font-size: 35px;
+  }
+  
+}
+@media (max-width:480px) {
+  .section2 h3{
+    font-size: 20px;
+  }
+  .section2 h1{
+    font-size: 30px;
+  }
+  
+}
+
