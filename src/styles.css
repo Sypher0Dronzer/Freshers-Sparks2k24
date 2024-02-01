@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+	overflow: hidden;
+}
+#canvas3d {
+  background: #00000000;
+  height: 40px !important;
+  width: 40px !important;
+  overflow: hidden;
+}
